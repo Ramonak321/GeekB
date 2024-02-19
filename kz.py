@@ -12,5 +12,7 @@ while txt != "q":
     txt_arr[i] = txt
     i += 1
 
-
-
+for element in txt_arr:
+    if len(txt_arr[i]) > 3:
+        print(txt_arr[i])
+    i += 1
