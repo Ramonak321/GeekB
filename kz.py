@@ -17,14 +17,16 @@ def add_array(txt_arr, n):
     return txt_arr
 
 def search_three(txt_arr):
+    new_txt_arr = []
     for element in txt_arr:
-        if len(element) == 3:
-            print(element)
-    return txt_arr
+        if len(element) <= 3:
+            new_txt_arr.append(element)
+    return new_txt_arr
 
 print("pls insert value array:")
 n = int(input())
 print("Insert text or 'q' for end:")
 txt_arr = []
 txt_arr = add_array(txt_arr, n)
-search_three(txt_arr)
+new_arr = search_three(txt_arr)
+print([l for l in new_arr])
