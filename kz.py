@@ -5,7 +5,7 @@
 # При решении не рекомендуется пользоваться коллекциями, 
 # лучше обойтись исключительно массивами.
 
-def add_array(txt_arr):
+def add_array(txt_arr, n):
     i = 0
     while i < n:
         txt = input()
@@ -26,5 +26,5 @@ print("pls insert value array:")
 n = int(input())
 print("Insert text or 'q' for end:")
 txt_arr = []
-txt_arr = add_array(txt_arr)
+txt_arr = add_array(txt_arr, n)
 search_three(txt_arr)
